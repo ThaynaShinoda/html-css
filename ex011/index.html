@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens flexíveis</h1>
+    <p>Usando a tag picture e a tag source podemos fazer com que as imagens mudem de tamanho conforme o dispositivo ou o tamanho da tela do navegador. Lembre-se de usar a tag source:medi:type e não esqueça de mudar o tamanho de min para max.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexível tamanho grande">
+    </picture>
+    <audio preload="auto" controls autoplay loop>
+        <source src="midia/Stayin' Lazy - Godmode.mp3" type="audio/mpeg">
+        <p>Seu navegador não reproduz áudio, <a href="midia/Stayin' Lazy - Godmode.mp3" download="Stayin' Lazy - Godmode.mp3" type="audio/mpeg">clique aqui</a> para download.</p>
+    </audio>
+</body>
+</html>
