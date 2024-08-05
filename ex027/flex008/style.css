@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+}
+
+.container {
+    background-color: aquamarine;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+
+.item {
+    border: 1px solid black;
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+}
+/*Align-self alinha no sentido do cross-axis*/
+div#i1 {
+    align-self: auto; /*Herdou do father o flex-start*/
+}
+div#i2 {
+    align-self: flex-start;
+}
+div#i3 {
+    align-self: flex-end;
+}
+div#i4 {
+    
+}
+div#i5 {
+    align-self: center;
+}
+div#i6 {
+    
+}
+div#i7 {
+    align-self: stretch;
+}
