@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iFrame</title>
+    <style>
+        iframe {
+            /*As configurações da CSS é soberana, portanto essas configurações que irão ser usadas*/
+            height: 600px;
+            width: 600px;
+            /*No frameborder só existem duas oções de borda "0" ou "1" , portanto para fazer mudanças basta usar o BORDER aqui na CSS*/
+            border: 3px dashed orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando uso de iframe</h1>
+    <p>
+        Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com/" frameborder="1" height="500" scrolling="no">
+            <!-- Usando o scrolling ele tira a barra de rolagem com a opção "no" -->
+            <a href="https://www.cursoemvideo.com/" target="_blank" >Curso em Video</a> 
+        </iframe>
+        para aprender a programar.
+    </p>
+    <p>
+        O site do Google 
+        <iframe src="https://www.google.com.br" frameborder="0" width="500"></iframe>
+        também é muito legal pena que não funciona dentro de um iframe.
+    </p>
+</body>
+</html>
