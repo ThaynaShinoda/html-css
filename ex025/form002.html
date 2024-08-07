@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 02</title>
+</head>
+<body>
+    <h1>Formulário: Criando caixas de texto e senha</h1>
+    <!-- METHOD:"POST" pois está lidando com senha, mesmo assim é necessário aprender HTTPS pois ainda assim é possível saber os dados usando o inspecionador  -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- 
+        REQUIRED: deixa obrigatório o preenchimento do input
+        
+        MINLENGTH e MAXLENGTH: especifica a quantidade de caracteres mínimo e máximo
+        
+        SIZE: aumenta a largura do input
+        
+        PLACEHOLDER: texto dentro da caixa-->
+        <p>
+            <label for="id-usuario">Usuário:</label>
+            <input type="text" name="usuario" id="id-usuario" required minlength="5" maxlength="20" size="20" placeholder="digite seu nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="id-senha">Senha:</label>
+            <input type="password" name="senha" id="id-senha" required minlength="8" maxlength="20" size="20" placeholder="digite sua senha" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
