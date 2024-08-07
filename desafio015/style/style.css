@@ -44,3 +44,22 @@ main {
     width: 265px;
     height: 468px;
 }
+
+#redes {
+    text-align: right;
+}
+
+#redes img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+#redes img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px black;
+    transform: translate(-5%, -5%);
+    transition: all .3s;
+}
