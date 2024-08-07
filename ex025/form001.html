@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo sobre formulário</h1>
+    <!--add em form >> Autocomplete: desliga as sugestões de preenchimento
+
+        add em form >> Action: é pra onde os dados serão enviados
+
+        add em texto >> Label: etiqueta que relaciona o o input com o texto
+
+        add em form >> Method: 'GET' deixa dados na Url e 'POST' não deixa na url, mas pode ser localizado no inspecionador de elementos > network > arquivo de cadastro(action) > payload > form data
+        
+        -->
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p>
+            <label for="id-nome">Nome:</label>
+            <input type="text" name="nome" id="id-nome">
+        </p>
+
+        <p>
+            <label for="id-sobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="id-sobrenome">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
