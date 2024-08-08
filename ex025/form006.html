@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 06</title>
+</head>
+<body>
+    <h1>Elementos color, range e file</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="id-cor">Cor:</label>
+            <input type="color" name="cor" id="id-cor" value="#00ff00">
+        </p>
+        <p>
+            <label for="id-nivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="id-nivel" min="1" max="5" value="4">
+            <!-- MIN: valor mínimo
+            MAX: valor máximo
+            VALUE: valor que ele vai deixar marcado -->
+        </p>
+        <p>
+            <label for="id-foto">Foto de perfil</label>
+            <input type="file" name="foto" id="id-foto">
+            <!-- Quando usar o tipo FILE , o METHOD tem que ser em POST pois o GET não pode ultrapassar 3kbytes-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
