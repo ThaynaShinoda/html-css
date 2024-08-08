@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 05</title>
+</head>
+<body>
+    <h1>Formulário - Checkbox e Radio button</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!-- Em INPUT:RADIO o "NAME" precisa estar com o mesmo valor, para que não seja assinalado todas as opções
+            
+            CHECKED: Já deixa assinalado, muito usado quando é para aceitar termos de uso e tudo mais.-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="id-masc"><label for="id-masc">Masculino</label>
+            <input type="radio" name="sexo" id="id-fem" checked><label for="id-fem">Feminino</label>
+            <input type="radio" name="sexo" id="id-nenhum"><label for="id-nenhum">Não quero informar</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="id-fut"> <label for="id-fut">Futebol</label> <br>
+            <input type="checkbox" name="basq" id="id-basq"> <label for="id-basq">Basquete</label> <br>
+            <input type="checkbox" name="nat" id="id-nat"> <label for="id-nat">Natação</label> <br>
+            <input type="checkbox" name="tenis" id="id-tenis"> <label for="id-tenis">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!-- Resumidamente, Radio só pode assinalar em uma opção e devem ter o mesmo NAME. Checkbox pode ser assinalado mais de uma opção -->
+</body>
+</html>
