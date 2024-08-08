@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 10</title>
+</head>
+<body>
+    <h1>Idade - output - introdução de JavaScript</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="idnasc">Ano de nascimento</label>
+            <input type="number" name="ano" id="idano" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="ididade">Sua idade é:</label>
+            <output name="idade" id="ididade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            ididade.innerHTML = Number(atual) - Number(idano.value)
+        }
+    </script>
+</body>
+</html>
