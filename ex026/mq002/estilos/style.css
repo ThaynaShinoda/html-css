@@ -1,2 +1,21 @@
 @charset "UTF-8";
 /*Principal*/
+
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+h1 { 
+    color: white;
+    text-shadow: 2px 2px 0px #0e1861;
+    padding: 10px;
+}
