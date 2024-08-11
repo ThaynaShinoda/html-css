@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+:root {
+    --cordocampo: #55B3D9;
+    --cor-enviar: #04BF68;
+    --cor-esqueci: #F28066;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+html, body {
+    background-color:#053BA6;
+    position: relative;
+}
+
+main {
+    display: block;
+    background-color: white;
+    margin: auto;
+    width: 260px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 20%);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+#imagem img {
+    width: 260px;
+    height: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#formulario h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+#formulario p {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .8em;
+}
+
+.campo {
+    background-color: var(--cordocampo);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.campo input {
+    display: inline-block;
+    width: 190px;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.enviar input{
+    display: block;
+    text-align: center;
+    background-color: var(--cor-enviar);
+    width: 240px; /*Problema aqui*/
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.enviar input:hover {
+    background-color: #053BA6;
+    color: white;
+}
+
+.esqueci a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: var(--cor-esqueci);
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: .8em;
+}
+
+.esqueci a:hover {
+    background-color: var(--cordocampo);
+}

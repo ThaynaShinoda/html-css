@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    html, body {
+        position: relative;
+    }
+
+    html {
+        background-image: linear-gradient(to bottom, #053BA6, #04BF68);
+        background-attachment: fixed;
+    }
+
+    main {
+        width: 700px;
+        height: 300px;
+        position: absolute;
+        top: 200px;
+    }
+
+    #imagem img {
+        width: 300px;
+        height: 300px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    #formulario {
+        width: 400px;
+        position: absolute;
+
+        top: 0px;
+        left: 300px;
+
+    }
+    .campo input {
+        width: 330px;
+    }
+    .enviar input {
+        width: 380px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    body {
+        position: relative;
+        
+    }
+
+    html {
+        background-image: linear-gradient(to bottom, #053BA6, #04BF68);
+        background-attachment: fixed;
+    }
+
+    main {
+        width: 900px;
+        height: 400px;
+        position: absolute;
+        top: 140px;
+    }
+
+    #imagem img {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 500px;
+
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #formulario {
+        width: 500px;
+        position: absolute;
+
+        top: 50px;
+    }
+
+    .campo input {
+        width: 400px;
+    }
+
+    .enviar input {
+        width: 480px;
+    }
+}
