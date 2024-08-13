@@ -11,7 +11,10 @@
 
     body {
         background-image: linear-gradient(to bottom, var(--cor04), var(--cor01));
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
     #login {
         width: 700px;
         height: 400px;
@@ -49,6 +52,8 @@
 
     body {
         background-image: linear-gradient(to bottom, var(--cor02), var(--cor03));
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     #login {
