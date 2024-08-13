@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaq.css">
+</head>
+<body>
+    <main>
+        <div id="login">
+            <section class="imagem">
+
+            </section>
+            <section class="formulario">
+                <div class="texto">
+                    <h1>Bem-vindo ao Nosso conta de Fadas!</h1>
+                    <p>Aqui, você encontrará todas as informações sobre o nosso grande dia, desde os detalhes do casamento até as atualizações sobre os eventos e celebrações que estão por vir. Esperamos que este espaço seja uma forma de manter todos vocês conectados e envolvidos na nossa celebração.</p>
+                </div>
+                <form action="login.php" method="post" autocomplete="off">
+
+                    <div class="campo">
+                        <label for="id-nome"><span class="material-symbols-outlined">person</span></label>
+                        <input type="text" name="nome" id="id-nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="campo">
+                        <label for="id-senha"><span class="material-symbols-rounded">vpn_key</span></label>
+                        <input type="password" name="senha" id="id-senha" placeholder="Senha do convidado">
+                    </div>
+                    <div class="botao">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

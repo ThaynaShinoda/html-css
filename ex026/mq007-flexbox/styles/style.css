@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root {
+    --cor01:#BF3B79;
+    --cor02:#384001;
+    --cor03:#9CA653;
+    --cor04:#F2CD5C;
+    --cor05:#F2F2F2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: var(--cor03);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    background-color: var(--cor05);
+    width: 250px;
+    height: 600px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+
+    overflow: hidden;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+.imagem {
+    display: block;
+    background: var(--cor01) url(../flores.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.397);
+    
+}
+
+.texto h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto p {
+    padding: 10px;
+    font-size: .9em;
+    text-indent: 10px;
+    text-align: center;
+    
+}
+
+.formulario {
+    font-size: .8em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+}
+
+.campo {
+    background-color: var(--cor01);
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 5px;
+}
+
+.campo span {
+    align-self: center;
+    width: 25px;
+    color: var(--cor04);
+}
+
+.campo input {
+    width: calc(95% - 40px);
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3e1aa;
+    text-align: center;
+}
+
+.botao input {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor02);
+    color: var(--cor05);
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
